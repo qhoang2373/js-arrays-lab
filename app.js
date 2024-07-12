@@ -65,3 +65,4 @@ foods.splice(2, 0, 'tofu');
 
 console.log('Exercise 5 result:', foods);
 
+
