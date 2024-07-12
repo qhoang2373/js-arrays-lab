@@ -77,6 +77,9 @@ foods.splice(1, 1, 'sushi', 'cupcake');
 
 console.log('Exercise 6 result:', foods);
 
+// Breakdown 
+// splice(Start Number,DeleteCount, ItemToAdd)
+
 /*
 Exercise 7: Using the `slice()` method
 
@@ -93,6 +96,9 @@ const yummy = foods.slice(1, 3);
 
 console.log('Exercise 7 result:', yummy);
 
+// Breakdown 
+// slice(Start,End)
+
 /*
 Exercise 8: Finding an index
 
@@ -104,9 +110,13 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-   const soyIdx = foods[3]
+   const soyIdx = foods.indexOf()
 
 console.log('Exercise 8 result:', soyIdx);
+
+// Breakdown 
+// Call the variable so that it will console Log, "const soyIdx"
+// 
 
 /*
 Exercise 9: Joining elements
@@ -126,4 +136,24 @@ const allFoods = foods.join(' -> ');
 
 
 console.log('Exercise 9 result:', allFoods);
+
+// Breakdown 
+// Call the variable so that it will console Log, "const allFoods"
+// foods.join, foods cause we are grabbing from food's array and .join('->') to contatenate
+
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+
+const hasSoup = foods.includes('soup')
+
+
+console.log('Exercise 10 result:', hasSoup);
 
