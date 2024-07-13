@@ -78,7 +78,7 @@ foods.splice(1, 1, 'sushi', 'cupcake');
 console.log('Exercise 6 result:', foods);
 
 // Breakdown 
-// splice(Start Number,DeleteCount, ItemToAdd)
+// splice(Start Number, DeleteCount, 'ItemToAdd')
 
 /*
 Exercise 7: Using the `slice()` method
@@ -90,7 +90,6 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-
 
 const yummy = foods.slice(1, 3);
 
@@ -110,6 +109,82 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-   const soyIdx = foods.indexOf('tofu')
+const soyIdx = foods.indexOf('tofu');
 
 console.log('Exercise 8 result:', soyIdx);
+
+// Breakdown 
+// Call the variable so that it will console Log, "const soyIdx"
+// foods because we are calling from the foods array. indexOf() because we are looking
+// to see if we can find an element in the given array, in this case they want
+// a string of 'tofu'
+
+/*
+Exercise 9: Joining elements
+
+1) Use the `join()` method to concatenate the strings in the `foods` array, 
+   separated by ' -> '. 
+
+2) Assign the result to a variable called `allFoods`. 
+
+Note: The final result should log as:
+'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+
+Complete Exercise 9 in the space below:
+*/
+
+const allFoods = foods.join(' -> ')
+
+
+console.log('Exercise 9 result:', allFoods);
+
+// Breakdown 
+// Call the variable so that it will console Log, "const allFoods"
+// foods.join, foods cause we are grabbing from food's array and .join('->') to contatenate
+
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+
+const hasSoup = foods.includes('soup')
+
+console.log('Exercise 10 result:', hasSoup);
+
+// Breakdown 
+// Call the variable so that it will console Log, "const hasSoup"
+// includes() foods cause we are grabbing from foods array and .includes() because
+// it is searching in the array if we have the word 'Soup', which this will come out as false
+// because we don't
+
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+const odds = [];
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 !== 0) {
+    odds.push(nums[i]);
+  }
+}
+
+console.log('Exercise 11 result:', odds);
+
