@@ -159,9 +159,8 @@ console.log('Exercise 10 result:', hasSoup);
 
 // Breakdown 
 // Call the variable so that it will console Log, "const hasSoup"
-// includes() foods cause we are grabbing from foods array and .includes() because
-// it is searching in the array if we have the word 'Soup', which this will come out as false
-// because we don't
+// "foods" cause we are grabbing from foods array and "".includes()"" because
+// it is searching in the array if we have the word 'soup'
 
 /*
 Exercise 11: Odd numbers from an array
@@ -175,9 +174,8 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 Complete Exercise 11 in the space below:
 */
 
-const odds = [];
-
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = [];
 
 
 for (let i = 0; i < nums.length; i++) {
@@ -187,4 +185,10 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 console.log('Exercise 11 result:', odds);
+
+// Breakdown
+// let i = 0 because we are starting the loop at 0
+// i < nums.length because we are stating that i will be less than the total number of elements
+// i++ because we are moving down the loop in increments of 1
+
 
