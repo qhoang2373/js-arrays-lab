@@ -191,4 +191,51 @@ console.log('Exercise 11 result:', odds);
 // i < nums.length because we are stating that i will be less than the total number of elements
 // i++ because we are moving down the loop in increments of 1
 
+/*
+Exercise 12: FizzBuzz with arrays
+
+1) Choose a method to iterate through the `nums` array. 
+
+2. As you loop, sort the numbers into new arrays based on the following rules:
+
+   - Push any number evenly divisible by 3 to an array called `fizz`.
+   - Push any number evenly divisible by 5 to an array called `buzz`.
+   - Push any number that is evenly divisible by 3 and 5 to an array called
+     `fizzbuzz`.
+
+   Note: A single number may meet more than one of the above rules. If it does,
+         it should be placed in multiple arrays. For example, the number `15`
+         will appear in the `fizz`, `buzz`, and `fizzbuzz` arrays.
+
+Complete Exercise 12 in the space below:
+*/
+
+const fizz = [];
+const buzz = [];
+const fizzbuzz = [];
+
+for (let i = 0; i < nums.length; i++) {
+   const num = nums[i];
+   if (num % 3 === 0) {
+      fizz.push(num);
+   } 
+      if (num % 5 === 0) { 
+         buzz.push(num);
+      }
+    if (num % 3 === 0 && num % 5 === 0) { 
+      fizzbuzz.push(num);
+   }
+}
+
+// breakdown
+// const num = nums[1] because we are stating current elements within
+// if (num % 3 === 0) because we will divide the current nums by 3
+// if (num % 5 === 0) same thing but divide by 5
+// if (num % 3 === 0 && num % 5 === 0) because 
+
+
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
