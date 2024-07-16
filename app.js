@@ -261,4 +261,33 @@ let numList = numArrays[numArrays.length -1];
 
 console.log('Exercise 13 result:', numList);
 
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+
+let num = 0
+
+numArrays.forEach((numArray) => {
+   console.log (numArray, 'inside a forEach')
+
+      for (let i = 0; i<numArray.length; i++) {
+         if (numArray[i] === 66 ) {
+         console.log(num, 'in the if statement')
+         num = numArray[i]
+      }
+   }
+
+})
+
+console.log('Exercise 14 result:', num);
+
+
+
 
