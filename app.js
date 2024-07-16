@@ -321,12 +321,6 @@ numArrays.forEach(array => {
 
 console.log('Exercise 15 result:\n', total);
 
-//breakdown
-// let total = 0 because we starting with 0 before the iterations
-// "numArrays.forEach(array =>" because we are using the for each method to iterate through each element 
-// in the array
-// "array.forEach((num) =>" used to iterate through each element with in the nested array
-// total += because this is where we calculate the sum
 
 
 
