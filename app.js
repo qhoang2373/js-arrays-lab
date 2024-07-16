@@ -77,7 +77,7 @@ foods.splice(1, 1, 'sushi', 'cupcake');
 
 console.log('Exercise 6 result:', foods);
 
-// Breakdown 
+// Breakdown #6
 // splice(Start Number, DeleteCount, 'ItemToAdd')
 
 /*
@@ -95,7 +95,7 @@ const yummy = foods.slice(1, 3);
 
 console.log('Exercise 7 result:', yummy);
 
-// Breakdown 
+// Breakdown #7
 // slice(Start,End)
 
 /*
@@ -113,7 +113,7 @@ const soyIdx = foods.indexOf('tofu');
 
 console.log('Exercise 8 result:', soyIdx);
 
-// Breakdown 
+// Breakdown #8
 // Call the variable so that it will console Log, "const soyIdx"
 // foods because we are calling from the foods array. indexOf() because we are looking
 // to see if we can find an element in the given array, in this case they want
@@ -157,7 +157,7 @@ const hasSoup = foods.includes('soup')
 
 console.log('Exercise 10 result:', hasSoup);
 
-// Breakdown 
+// Breakdown #10
 // Call the variable so that it will console Log, "const hasSoup"
 // "foods" cause we are grabbing from foods array and "".includes()"" because
 // it is searching in the array if we have the word 'soup'
@@ -186,7 +186,7 @@ for (let i = 0; i < nums.length; i++) {
 
 console.log('Exercise 11 result:', odds);
 
-// Breakdown
+// Breakdown #11
 // let i = 0 because we are starting the loop at 0
 // i < nums.length because we are stating that i will be less than the total number of elements
 // i++ because we are moving down the loop in increments of 1
@@ -232,7 +232,7 @@ console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
 
-// breakdown
+// breakdown #12
 // const num = nums[1] because we are stating current elements within
 // if (num % 3 === 0) because we will divide the current nums by 3
 // if (num % 5 === 0) same thing but divide by 5
@@ -288,7 +288,7 @@ numArrays.forEach((numArray) => {
 
 console.log('Exercise 14 result:', num);
 
-//breakdown
+//breakdown #14
 // let i = 0 because we are starting with 0
 // i<numArray.length because we will be moving through the array
 // i++ because we are moving by increments of 1
@@ -320,7 +320,3 @@ numArrays.forEach(array => {
 
 
 console.log('Exercise 15 result:\n', total);
-
-
-
-
