@@ -288,6 +288,12 @@ numArrays.forEach((numArray) => {
 
 console.log('Exercise 14 result:', num);
 
+//breakdown
+// let i = 0 because we are starting with 0
+// i<numArray.length because we will be moving through the array
+// i++ because we are moving by increments of 1
+// (numArray[i] === 66 becasue we will be retrieving the number '66' from the numArrays
+
 
 
 
