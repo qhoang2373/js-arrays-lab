@@ -227,15 +227,38 @@ for (let i = 0; i < nums.length; i++) {
    }
 }
 
-// breakdown
-// const num = nums[1] because we are stating current elements within
-// if (num % 3 === 0) because we will divide the current nums by 3
-// if (num % 5 === 0) same thing but divide by 5
-// if (num % 3 === 0 && num % 5 === 0) because 
-
-
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
+
+// breakdown
+// const num = nums[1] because we are stating current elements within
+// if (num % 3 === 0) because we will divide the current nums by 3
+// if (num % 5 === 0) same thing but divide by 5
+// if (num % 3 === 0 && num % 5 === 0) because we are pushing any number divisible by 3 and 5 
+
+/*
+Exercise 13: Retrieve the Last Array
+
+1) Assign the last nested array in the `numArrays` below to a variable named
+   `numList`. As you do this, also fulfill these goals:
+
+   - Assume you don't know how many nested arrays `numArrays` contains.
+   - Do not alter the original `numArrays` array.
+
+Complete Exercise 13 in the space below:
+*/
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+let numList = numArrays[numArrays.length -1];
+
+console.log('Exercise 13 result:', numList);
+
 
